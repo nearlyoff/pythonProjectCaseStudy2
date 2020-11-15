@@ -75,4 +75,8 @@ elif C == 3:
     print("BALUISA")
 else:
     print("Invalid category value. Try again.")
-print('Your annual tax:', round(tax, 2))
+
+if tax == 0:
+    print("Invalid category value. Try again.")
+else:
+    print('Your annual tax:', round(tax, 2))
