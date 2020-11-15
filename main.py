@@ -42,7 +42,8 @@ if C == 1:
         else:
             tax += 0.15 * (summ - 9075)
     else:
-        tax += 0.1 * (summ)
+        tax += 0.1 * summ
+
 elif C == 2:
     if summ - 18150 > 0:
         tax += 0.1 * 18150
@@ -78,4 +79,4 @@ elif C == 3:
 else:
     print("NE BALUISA")
 
-print(tax)
+print(round(tax, 2))
