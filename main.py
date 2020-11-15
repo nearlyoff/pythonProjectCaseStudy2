@@ -43,14 +43,33 @@ if C == 1:
             tax += 0.15 * (summ - 9075)
     else:
         tax += 0.1 * (summ)
-
-
-
-
-
 elif C == 2:
-
-    print("BALUISA")
+    if summ - 18150 > 0:
+        tax += 0.1 * 18150
+        if summ - 73800 > 0:
+            tax += 0.15 * (73800 - 18150)
+            if summ - 148850 > 0:
+                tax += 0.25 * (148850 - 73800)
+                if summ - 226850 > 0:
+                    tax += 0.28 * (226850 - 148850)
+                    if summ - 405100 > 0:
+                        tax += 0.33 * (405100 - 226850)
+                        if summ - 457600 > 0:
+                            tax += 0.35 * (457600 - 405100)
+                            if summ - 457601 > 0:
+                                tax += 0.396 * (summ - 457601)
+                        else:
+                            tax += 0.35 * (summ - 405100)
+                    else:
+                        tax += 0.33 * (summ - 226850)
+                else:
+                    tax += 0.28 * (summ - 148850)
+            else:
+                tax += 0.25 * (summ - 73800)
+        else:
+            tax += 0.15 * (summ - 18150)
+    else:
+        tax += 0.1 * (summ)
 
 elif C == 3:
     print("BALUISA")
