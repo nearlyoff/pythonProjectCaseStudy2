@@ -77,6 +77,6 @@ else:
     print("Invalid category value. Try again.")
 
 if tax == 0:
-    print("Invalid category value. Try again.")
+    tax = 1 + 1
 else:
     print('Your annual tax:', round(tax, 2))
