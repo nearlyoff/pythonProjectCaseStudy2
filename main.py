@@ -12,4 +12,4 @@ for month in range(12):
     income = int(input())
     summ += income
 
-print(summ)
+print('Your annual income: ', summ)
