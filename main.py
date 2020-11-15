@@ -99,6 +99,7 @@ if C == 1 or C == 2 or C == 3:
                 tax += 0.15 * (summ - 12950)
         else:
             tax += 0.1 * summ
+
     print('Your annual tax:', tax)
 else:
     print('Invalid category value. Try again.')
