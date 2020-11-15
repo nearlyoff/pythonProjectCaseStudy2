@@ -13,3 +13,19 @@ for month in range(12):
     summ += income
 
 print('Your annual income: ', summ)
+
+if C == 1 :
+
+
+
+elif C == 2 :
+
+
+
+elif C == 3 :
+
+
+
+
+else:
+    print("NE BALUISA")
