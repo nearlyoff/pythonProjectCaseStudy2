@@ -14,18 +14,18 @@ for month in range(12):
 
 print('Your annual income: ', summ)
 
-if C == 1 :
+if C == 1:
 
 
 
-elif C == 2 :
+elif C == 2:
 
 
 
-elif C == 3 :
+elif C == 3:
 
 
 
 
 else:
-    print("NE BALUISA")
+    print("Invalid category value. Please try again.")
