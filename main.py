@@ -32,15 +32,15 @@ if C == 1:
                             if summ - 406751 > 0:
                                 tax += 0.396 * (summ - 406751)
                         else:
-                            tax += 0.35 * (summ)
+                            tax += 0.35 * (summ - 405100)
                     else:
-                        tax += 0.33 * (summ)
+                        tax += 0.33 * (summ - 186350)
                 else:
-                    tax += 0.28 * (summ)
+                    tax += 0.28 * (summ - 89350)
             else:
-                tax += 0.25 * (summ)
+                tax += 0.25 * (summ - 36900)
         else:
-            tax += 0.15 * (summ)
+            tax += 0.15 * (summ - 9075)
     else:
         tax += 0.1 * (summ)
 
