@@ -4,7 +4,7 @@
 #               Soknyshev D. (50%)
 print('Choose your category (1 - one subject, 2 - married couple, 3 - single parent). Type only 1 value: ')
 C = int(input())
-if C == 1 or C == 2 or C == 3:
+if C == 1 or C == 2 or C == 3:  # calculating total income for the year
     months_list = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
     summ = 0
     print('Enter your income for each month:')
@@ -16,7 +16,7 @@ if C == 1 or C == 2 or C == 3:
     print('Your annual income:', summ)
     tax = 0
 
-    if C == 1:
+    if C == 1:  # for the first category of people
         if summ - 9075 > 0:
             tax += 0.1 * 9075
             if summ - 36900 > 0:
@@ -44,7 +44,7 @@ if C == 1 or C == 2 or C == 3:
         else:
             tax += 0.1 * summ
 
-    elif C == 2:
+    elif C == 2:  # for the second category of people
         if summ - 18150 > 0:
             tax += 0.1 * 18150
             if summ - 73800 > 0:
@@ -72,7 +72,7 @@ if C == 1 or C == 2 or C == 3:
         else:
             tax += 0.1 * summ
 
-    elif C == 3:
+    elif C == 3:  # for the third category of people
         if summ - 12950 > 0:
             tax += 0.1 * 12950
             if summ - 49400 > 0:
@@ -102,4 +102,4 @@ if C == 1 or C == 2 or C == 3:
 
     print('Your annual tax:', round(tax, 2))
 else:
-    print('Invalid category value. Try again.')
+    print('Invalid category value. Try again.')  # if the value is not 1/2/3
