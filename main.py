@@ -73,7 +73,32 @@ if C == 1 or C == 2 or C == 3:
             tax += 0.1 * summ
 
     elif C == 3:
-        print("BALUISA")
+        if summ - 12950 > 0:
+            tax += 0.1 * 12950
+            if summ - 49400 > 0:
+                tax += 0.15 * (49400 - 12950)
+                if summ - 127550 > 0:
+                    tax += 0.25 * (127550 - 49400)
+                    if summ - 206600 > 0:
+                        tax += 0.28 * (206600 - 127550)
+                        if summ - 405100 > 0:
+                            tax += 0.33 * (405100 - 206600)
+                            if summ - 432200 > 0:
+                                tax += 0.35 * (432200 - 405100)
+                                if summ - 432201 > 0:
+                                    tax += 0.396 * (summ - 432201)
+                            else:
+                                tax += 0.35 * (summ - 405100)
+                        else:
+                            tax += 0.33 * (summ - 206600)
+                    else:
+                        tax += 0.28 * (summ - 127550)
+                else:
+                    tax += 0.25 * (summ - 49400)
+            else:
+                tax += 0.15 * (summ - 12950)
+        else:
+            tax += 0.1 * summ
     print('Your annual tax:', tax)
 else:
     print('Invalid category value. Try again.')
