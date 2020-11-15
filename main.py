@@ -100,6 +100,6 @@ if C == 1 or C == 2 or C == 3:
         else:
             tax += 0.1 * summ
 
-    print('Your annual tax:', tax)
+    print('Your annual tax:', round(tax, 2))
 else:
     print('Invalid category value. Try again.')
