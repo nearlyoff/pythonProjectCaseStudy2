@@ -1,7 +1,7 @@
-# Case-study #2
-# Developers:   Kremlin V. (%),
-#               Maslyukova P. (%),
-#               Soknyshev D. (%)
+# Case-study #2 "Progressive taxation"
+# Developers:   Kremlin V. (40%),
+#               Maslyukova P. (30%),
+#               Soknyshev D. (50%)
 print('Choose your category (1 - one subject, 2 - married couple, 3 - single parent). Type only 1 value: ')
 C = int(input())
 months_list = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
@@ -12,8 +12,7 @@ for month in range(12):
     income = int(input())
     summ += income
 
-print('Your annual income: ', summ)
-
+print('Your annual income:', summ)
 tax = 0
 
 if C == 1:
@@ -70,13 +69,10 @@ elif C == 2:
         else:
             tax += 0.15 * (summ - 18150)
     else:
-        tax += 0.1 * (summ)
+        tax += 0.1 * summ
 
 elif C == 3:
     print("BALUISA")
-
-
 else:
-    print("NE BALUISA")
-
-print(round(tax, 2))
+    print("Invalid category value. Try again.")
+print('Your annual tax:', round(tax, 2))
